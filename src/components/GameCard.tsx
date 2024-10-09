@@ -10,7 +10,7 @@ interface Props {
 }
 const GameCard = ({ game }: Props) => {
   return (
-    <Card borderRadius={10} overflow={"hidden"}>
+    <Card width={'200px'} borderRadius={10} overflow={"hidden"}>
       <Image src={getCropedImageUrl(game.background_image)} />
       <CardBody>
         <Heading fontSize={"xl"} marginBottom={5}>
@@ -22,7 +22,7 @@ const GameCard = ({ game }: Props) => {
           />
           <CriticScore score={game.metacritic} />
         </HStack>
-      </CardBody> 
+      </CardBody>
     </Card>
   );
 };
