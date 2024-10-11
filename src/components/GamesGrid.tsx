@@ -8,6 +8,7 @@ import { Genre } from "../Hook/useGenre";
 
 interface Props{
   selectedGenre : Genre | null 
+  
 }
 const GamesGrid = ( {selectedGenre} : Props) => {
   const { data, error, isLoading } = useGame(selectedGenre);
